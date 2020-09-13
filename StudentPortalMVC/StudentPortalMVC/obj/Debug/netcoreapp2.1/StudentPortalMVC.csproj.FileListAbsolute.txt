@@ -1,0 +1,6 @@
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.csprojAssemblyReference.cache
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.AssemblyInfoInputs.cache
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.AssemblyInfo.cs
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.csproj.CoreCompileInputs.cache
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.RazorAssemblyInfo.cache
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.RazorAssemblyInfo.cs
