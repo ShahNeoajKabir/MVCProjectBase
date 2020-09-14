@@ -35,3 +35,9 @@ C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\D
 C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.pdb
 C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.genruntimeconfig.cache
 C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.csproj.CopyComplete
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\StudentPortalMVC.csprojAssemblyReference.cache
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Attendances\Create.cshtml.g.cs
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Attendances\Delete.cshtml.g.cs
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Attendances\Details.cshtml.g.cs
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Attendances\Edit.cshtml.g.cs
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortalMVC\obj\Debug\netcoreapp2.1\Razor\Views\Attendances\Index.cshtml.g.cs
