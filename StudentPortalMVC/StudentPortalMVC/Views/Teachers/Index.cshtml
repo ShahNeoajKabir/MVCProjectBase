@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table" id="TeacheListTable">
     <thead>
         <tr>
             <th>
@@ -58,56 +58,95 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeacherName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeacherCode)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeacherInitial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mobile)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateOfBirth)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BloodGroup)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UpdatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Image)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.TeacherId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.TeacherId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.TeacherId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeacherName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeacherCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeacherInitial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mobile)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfBirth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BloodGroup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UpdatedBy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UpdatedDate)
+                </td>
+                <td>
+                    @{if (item.Status == 1)
+                        {
+                            <label>Active</label>
+
+                        }
+                    }
+                    @*@Html.DisplayFor(modelItem => item.Status)*@
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Image)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.TeacherId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.TeacherId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.TeacherId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+@section Scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#TeacheListTable').DataTable({
+                // responsive: true,
+                searching: true,
+                scrollX: true,
+                search: true,
+                // DOM Layout settings
+                dom: "<'row'<'col-sm-12'tr>><'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7 dataTables_pager'lp>>",
+
+                lengthMenu: [5, 10, 25, 50],
+
+                pageLength: 1,
+
+                language: {
+                    'lengthMenu': 'Display _MENU_',
+                },
+
+                // Order settings
+                order: [[1, 'desc']],
+                //search: true,
+
+
+            });
+        }
+    </script>
+}
+
+
+

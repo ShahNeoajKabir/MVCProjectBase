@@ -57,6 +57,9 @@ namespace StudentPortalMVC.Controllers
         {
             if (ModelState.IsValid)
             {
+                user.CreatedBy = "Admin";
+                user.CreatedDate = DateTime.Now;
+                user.Status = (int)StudentPortalMVC.Enum.Enum.Status.Active;
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,6 +99,8 @@ namespace StudentPortalMVC.Controllers
             {
                 try
                 {
+                    user.UpdatedBy = "Admin";
+                    user.UpdatedDate = DateTime.Now;
                     _context.Update(user);
                     await _context.SaveChangesAsync();
                 }

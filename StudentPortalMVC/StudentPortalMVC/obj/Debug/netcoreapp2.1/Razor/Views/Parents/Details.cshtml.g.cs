@@ -304,7 +304,7 @@ using StudentPortalMVC.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(2290, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8249def4b0ed46368910084a7ad38701", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "966a13e4167d40ffa1eb33842c1fc788", async() => {
                 BeginContext(2343, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -339,7 +339,7 @@ using StudentPortalMVC.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(2359, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5ae565acf3c240dbad5881b8b194ff9d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ccc3c0819748415f9249f8ed7d19aefe", async() => {
                 BeginContext(2381, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

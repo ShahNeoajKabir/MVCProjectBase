@@ -57,10 +57,42 @@ namespace StudentPortalMVC.Controllers
         {
             if (ModelState.IsValid)
             {
+                _context.Database.BeginTransaction();
+                teacher.CreatedBy = "CoOrdinator";
+                teacher.CreatedDate = DateTime.Now;
+                teacher.Status = (int)StudentPortalMVC.Enum.Enum.Status.Active;
                 _context.Add(teacher);
                 await _context.SaveChangesAsync();
+
+                User user = new User()
+                {
+                    UserName = teacher.TeacherName,
+                    Email = teacher.Email,
+                    UserTypeId = (int)StudentPortalMVC.Enum.Enum.UserType.Teacher,
+                    Status = (int)StudentPortalMVC.Enum.Enum.Status.Active,
+                    CreatedBy = teacher.CreatedBy,
+                    CreatedDate = teacher.CreatedDate,
+                    Password = "123456",
+                    MobileNo = teacher.Mobile
+                };
+                _context.User.Add(user);
+                await _context.SaveChangesAsync();
+
+                UserMapping userMapping = new UserMapping
+                {
+                    IdentityId = teacher.TeacherId,
+                    Status = (int)StudentPortalMVC.Enum.Enum.Status.Active,
+                    UserId = user.UserId,
+                    CreatedBy = teacher.CreatedBy,
+                    CreatedDate = teacher.CreatedDate,
+                    UserTypeId = (int)StudentPortalMVC.Enum.Enum.UserType.Teacher
+                };
+                _context.UserMapping.Add(userMapping);
+                await _context.SaveChangesAsync();
+                _context.Database.CommitTransaction();
                 return RedirectToAction(nameof(Index));
             }
+            else { _context.Database.RollbackTransaction(); }
             return View(teacher);
         }
 
