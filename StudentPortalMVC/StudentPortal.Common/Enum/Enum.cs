@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace StudentPortalMVC.Enum
+namespace StudentPortal.Common.Enum
 {
-    public class Enum
+   public class Enum
     {
         public enum Gender
         {

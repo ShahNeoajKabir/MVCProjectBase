@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sL0lCUGro9+8uQISi5O9Z68qpg2yiZz83hGh59SbLBC4Lu+VMwdGU+xLaE4owRZF4PXejrTFo4v7iH7foAxp6A==",
+  "success": true,
+  "projectFilePath": "C:\\C# Project and Solve\\StudentPortalMVC\\StudentPortalMVC\\StudentPortal.Common\\StudentPortal.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,5 @@
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortal.Common\bin\Debug\netstandard2.0\StudentPortal.Common.deps.json
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortal.Common\bin\Debug\netstandard2.0\StudentPortal.Common.dll
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortal.Common\obj\Debug\netstandard2.0\StudentPortal.Common.csprojAssemblyReference.cache
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortal.Common\obj\Debug\netstandard2.0\StudentPortal.Common.AssemblyInfoInputs.cache
+C:\C# Project and Solve\StudentPortalMVC\StudentPortalMVC\StudentPortal.Common\obj\Debug\netstandard2.0\StudentPortal.Common.AssemblyInfo.cs

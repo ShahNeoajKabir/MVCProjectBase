@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudentPortal.Common\StudentPortal.Common.csproj" />
+    <ProjectReference Include="..\StudentPortalMVC\StudentPortalMVC.csproj" />
+  </ItemGroup>
+
+</Project>
